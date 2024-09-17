@@ -1,0 +1,6 @@
+.parallax-slide {
+    transition: opacity 1s ease-in-out, transform 0.5s ease-out;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Difuminado oscuro */
+}
