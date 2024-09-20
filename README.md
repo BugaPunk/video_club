@@ -10,7 +10,7 @@
 # Video Club AppLiewire
 
 ## Pasos:
-Previamente debe tener instalado XAMPP, LAMPP o WAMPP y debe estar iniciado el servidor
+Previamente debe tener instalado XAMPP, LAMPP o WAMPP y git, ademas debe estar iniciado el servidor (ejecutar los comandos en la terminal, cmd o powershell)
 ### Paso 1:
 ```bash
 git clone https://github.com/BugaPunk/video_club.git
