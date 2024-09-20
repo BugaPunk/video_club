@@ -8,12 +8,27 @@
   <title>VIDEOCLUB</title>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
 
   <!-- Styles -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- cdn de Tailwind -->
+  <!--
+    Documentacion de Tailwind: https://tailwindcss.com/docs/installation
+    Componentes: https://tailblocks.cc/
+              : https://www.hyperui.dev/
+  -->
   <style>
+    :root {
+      font-family: "Ubuntu Sans", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     .parallax-slide {
       transition: opacity 1s ease-in-out, transform 0.5s ease-out;
     }
@@ -25,910 +40,25 @@
     .header {
       background: rgba(0, 0, 0, 0);
     }
-
-    /* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
-    *,
-    ::after,
-    ::before {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-      border-color: #e5e7eb
-    }
-
-    ::after,
-    ::before {
-      --tw-content: ''
-    }
-
-    :host,
-    html {
-      line-height: 1.5;
-      -webkit-text-size-adjust: 100%;
-      -moz-tab-size: 4;
-      tab-size: 4;
-      font-family: Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-      font-feature-settings: normal;
-      font-variation-settings: normal;
-      -webkit-tap-highlight-color: transparent
-    }
-
-    body {
-      margin: 0;
-      line-height: inherit
-    }
-
-    hr {
-      height: 0;
-      color: inherit;
-      border-top-width: 1px
-    }
-
-    abbr:where([title]) {
-      -webkit-text-decoration: underline dotted;
-      text-decoration: underline dotted
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-size: inherit;
-      font-weight: inherit
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit
-    }
-
-    b,
-    strong {
-      font-weight: bolder
-    }
-
-    code,
-    kbd,
-    pre,
-    samp {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-feature-settings: normal;
-      font-variation-settings: normal;
-      font-size: 1em
-    }
-
-    small {
-      font-size: 80%
-    }
-
-    sub,
-    sup {
-      font-size: 75%;
-      line-height: 0;
-      position: relative;
-      vertical-align: baseline
-    }
-
-    sub {
-      bottom: -.25em
-    }
-
-    sup {
-      top: -.5em
-    }
-
-    table {
-      text-indent: 0;
-      border-color: inherit;
-      border-collapse: collapse
-    }
-
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-feature-settings: inherit;
-      font-variation-settings: inherit;
-      font-size: 100%;
-      font-weight: inherit;
-      line-height: inherit;
-      color: inherit;
-      margin: 0;
-      padding: 0
-    }
-
-    button,
-    select {
-      text-transform: none
-    }
-
-    [type=button],
-    [type=reset],
-    [type=submit],
-    button {
-      -webkit-appearance: button;
-      background-color: transparent;
-      background-image: none
-    }
-
-    :-moz-focusring {
-      outline: auto
-    }
-
-    :-moz-ui-invalid {
-      box-shadow: none
-    }
-
-    progress {
-      vertical-align: baseline
-    }
-
-    ::-webkit-inner-spin-button,
-    ::-webkit-outer-spin-button {
-      height: auto
-    }
-
-    [type=search] {
-      -webkit-appearance: textfield;
-      outline-offset: -2px
-    }
-
-    ::-webkit-search-decoration {
-      -webkit-appearance: none
-    }
-
-    ::-webkit-file-upload-button {
-      -webkit-appearance: button;
-      font: inherit
-    }
-
-    summary {
-      display: list-item
-    }
-
-    blockquote,
-    dd,
-    dl,
-    figure,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    hr,
-    p,
-    pre {
-      margin: 0
-    }
-
-    fieldset {
-      margin: 0;
-      padding: 0
-    }
-
-    legend {
-      padding: 0
-    }
-
-    menu,
-    ol,
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0
-    }
-
-    dialog {
-      padding: 0
-    }
-
-    textarea {
-      resize: vertical
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      opacity: 1;
-      color: #9ca3af
-    }
-
-    [role=button],
-    button {
-      cursor: pointer
-    }
-
-    :disabled {
-      cursor: default
-    }
-
-    audio,
-    canvas,
-    embed,
-    iframe,
-    img,
-    object,
-    svg,
-    video {
-      display: block;
-      vertical-align: middle
-    }
-
-    img,
-    video {
-      max-width: 100%;
-      height: auto
-    }
-
-    [hidden] {
-      display: none
-    }
-
-    *,
-    ::before,
-    ::after {
-      --tw-border-spacing-x: 0;
-      --tw-border-spacing-y: 0;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-rotate: 0;
-      --tw-skew-x: 0;
-      --tw-skew-y: 0;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-pan-x: ;
-      --tw-pan-y: ;
-      --tw-pinch-zoom: ;
-      --tw-scroll-snap-strictness: proximity;
-      --tw-gradient-from-position: ;
-      --tw-gradient-via-position: ;
-      --tw-gradient-to-position: ;
-      --tw-ordinal: ;
-      --tw-slashed-zero: ;
-      --tw-numeric-figure: ;
-      --tw-numeric-spacing: ;
-      --tw-numeric-fraction: ;
-      --tw-ring-inset: ;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-color: rgb(59 130 246 / 0.5);
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-colored: 0 0 #0000;
-      --tw-blur: ;
-      --tw-brightness: ;
-      --tw-contrast: ;
-      --tw-grayscale: ;
-      --tw-hue-rotate: ;
-      --tw-invert: ;
-      --tw-saturate: ;
-      --tw-sepia: ;
-      --tw-drop-shadow: ;
-      --tw-backdrop-blur: ;
-      --tw-backdrop-brightness: ;
-      --tw-backdrop-contrast: ;
-      --tw-backdrop-grayscale: ;
-      --tw-backdrop-hue-rotate: ;
-      --tw-backdrop-invert: ;
-      --tw-backdrop-opacity: ;
-      --tw-backdrop-saturate: ;
-      --tw-backdrop-sepia:
-    }
-
-    ::backdrop {
-      --tw-border-spacing-x: 0;
-      --tw-border-spacing-y: 0;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-rotate: 0;
-      --tw-skew-x: 0;
-      --tw-skew-y: 0;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-pan-x: ;
-      --tw-pan-y: ;
-      --tw-pinch-zoom: ;
-      --tw-scroll-snap-strictness: proximity;
-      --tw-gradient-from-position: ;
-      --tw-gradient-via-position: ;
-      --tw-gradient-to-position: ;
-      --tw-ordinal: ;
-      --tw-slashed-zero: ;
-      --tw-numeric-figure: ;
-      --tw-numeric-spacing: ;
-      --tw-numeric-fraction: ;
-      --tw-ring-inset: ;
-      --tw-ring-offset-width: 0px;
-      --tw-ring-offset-color: #fff;
-      --tw-ring-color: rgb(59 130 246 / 0.5);
-      --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-ring-shadow: 0 0 #0000;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-colored: 0 0 #0000;
-      --tw-blur: ;
-      --tw-brightness: ;
-      --tw-contrast: ;
-      --tw-grayscale: ;
-      --tw-hue-rotate: ;
-      --tw-invert: ;
-      --tw-saturate: ;
-      --tw-sepia: ;
-      --tw-drop-shadow: ;
-      --tw-backdrop-blur: ;
-      --tw-backdrop-brightness: ;
-      --tw-backdrop-contrast: ;
-      --tw-backdrop-grayscale: ;
-      --tw-backdrop-hue-rotate: ;
-      --tw-backdrop-invert: ;
-      --tw-backdrop-opacity: ;
-      --tw-backdrop-saturate: ;
-      --tw-backdrop-sepia:
-    }
-
-    .absolute {
-      position: absolute
-    }
-
-    .relative {
-      position: relative
-    }
-
-    .-left-20 {
-      left: -5rem
-    }
-
-    .top-0 {
-      top: 0px
-    }
-
-    .-bottom-16 {
-      bottom: -4rem
-    }
-
-    .-left-16 {
-      left: -4rem
-    }
-
-    .-mx-3 {
-      margin-left: -0.75rem;
-      margin-right: -0.75rem
-    }
-
-    .mt-4 {
-      margin-top: 1rem
-    }
-
-    .mt-6 {
-      margin-top: 1.5rem
-    }
-
-    .flex {
-      display: flex
-    }
-
-    .grid {
-      display: grid
-    }
-
-    .hidden {
-      display: none
-    }
-
-    .aspect-video {
-      aspect-ratio: 16 / 9
-    }
-
-    .size-12 {
-      width: 3rem;
-      height: 3rem
-    }
-
-    .size-5 {
-      width: 1.25rem;
-      height: 1.25rem
-    }
-
-    .size-6 {
-      width: 1.5rem;
-      height: 1.5rem
-    }
-
-    .h-12 {
-      height: 3rem
-    }
-
-    .h-40 {
-      height: 10rem
-    }
-
-    .h-full {
-      height: 100%
-    }
-
-    .min-h-screen {
-      min-height: 100vh
-    }
-
-    .w-full {
-      width: 100%
-    }
-
-    .w-\[calc\(100\%\+8rem\)\] {
-      width: calc(100% + 8rem)
-    }
-
-    .w-auto {
-      width: auto
-    }
-
-    .max-w-\[877px\] {
-      max-width: 877px
-    }
-
-    .max-w-2xl {
-      max-width: 42rem
-    }
-
-    .flex-1 {
-      flex: 1 1 0%
-    }
-
-    .shrink-0 {
-      flex-shrink: 0
-    }
-
-    .grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr))
-    }
-
-    .flex-col {
-      flex-direction: column
-    }
-
-    .items-start {
-      align-items: flex-start
-    }
-
-    .items-center {
-      align-items: center
-    }
-
-    .items-stretch {
-      align-items: stretch
-    }
-
-    .justify-end {
-      justify-content: flex-end
-    }
-
-    .justify-center {
-      justify-content: center
-    }
-
-    .gap-2 {
-      gap: 0.5rem
-    }
-
-    .gap-4 {
-      gap: 1rem
-    }
-
-    .gap-6 {
-      gap: 1.5rem
-    }
-
-    .self-center {
-      align-self: center
-    }
-
-    .overflow-hidden {
-      overflow: hidden
-    }
-
-    .rounded-\[10px\] {
-      border-radius: 10px
-    }
-
-    .rounded-full {
-      border-radius: 9999px
-    }
-
-    .rounded-lg {
-      border-radius: 0.5rem
-    }
-
-    .rounded-md {
-      border-radius: 0.375rem
-    }
-
-    .rounded-sm {
-      border-radius: 0.125rem
-    }
-
-    .bg-\[\#FF2D20\]\/10 {
-      background-color: rgb(255 45 32 / 0.1)
-    }
-
-    .bg-white {
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 255 255 / var(--tw-bg-opacity))
-    }
-
-    .bg-gradient-to-b {
-      background-image: linear-gradient(to bottom, var(--tw-gradient-stops))
-    }
-
-    .from-transparent {
-      --tw-gradient-from: transparent var(--tw-gradient-from-position);
-      --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
-    }
-
-    .via-white {
-      --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
-      --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)
-    }
-
-    .to-white {
-      --tw-gradient-to: #fff var(--tw-gradient-to-position)
-    }
-
-    .stroke-\[\#FF2D20\] {
-      stroke: #FF2D20
-    }
-
-    .object-cover {
-      object-fit: cover
-    }
-
-    .object-top {
-      object-position: top
-    }
-
-    .p-6 {
-      padding: 1.5rem
-    }
-
-    .px-6 {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem
-    }
-
-    .py-10 {
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem
-    }
-
-    .px-3 {
-      padding-left: 0.75rem;
-      padding-right: 0.75rem
-    }
-
-    .py-16 {
-      padding-top: 4rem;
-      padding-bottom: 4rem
-    }
-
-    .py-2 {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem
-    }
-
-    .pt-3 {
-      padding-top: 0.75rem
-    }
-
-    .text-center {
-      text-align: center
-    }
-
-    .font-sans {
-      font-family: Figtree, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
-    }
-
-    .text-sm {
-      font-size: 0.875rem;
-      line-height: 1.25rem
-    }
-
-    .text-sm\/relaxed {
-      font-size: 0.875rem;
-      line-height: 1.625
-    }
-
-    .text-xl {
-      font-size: 1.25rem;
-      line-height: 1.75rem
-    }
-
-    .font-semibold {
-      font-weight: 600
-    }
-
-    .text-black {
-      --tw-text-opacity: 1;
-      color: rgb(0 0 0 / var(--tw-text-opacity))
-    }
-
-    .text-white {
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity))
-    }
-
-    .underline {
-      -webkit-text-decoration-line: underline;
-      text-decoration-line: underline
-    }
-
-    .antialiased {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale
-    }
-
-    .shadow-\[0px_14px_34px_0px_rgba\(0\2c 0\2c 0\2c 0\.08\)\] {
-      --tw-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.08);
-      --tw-shadow-colored: 0px 14px 34px 0px var(--tw-shadow-color);
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-    }
-
-    .ring-1 {
-      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
-    }
-
-    .ring-transparent {
-      --tw-ring-color: transparent
-    }
-
-    .ring-white\/\[0\.05\] {
-      --tw-ring-color: rgb(255 255 255 / 0.05)
-    }
-
-    .drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.06\)\] {
-      --tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.06));
-      filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-    }
-
-    .drop-shadow-\[0px_4px_34px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
-      --tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0, 0, 0, 0.25));
-      filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
-    }
-
-    .transition {
-      transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-      transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 150ms
-    }
-
-    .duration-300 {
-      transition-duration: 300ms
-    }
-
-    .selection\:bg-\[\#FF2D20\] *::selection {
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 45 32 / var(--tw-bg-opacity))
-    }
-
-    .selection\:text-white *::selection {
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity))
-    }
-
-    .selection\:bg-\[\#FF2D20\]::selection {
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 45 32 / var(--tw-bg-opacity))
-    }
-
-    .selection\:text-white::selection {
-      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity))
-    }
-
-    .hover\:text-black:hover {
-      --tw-text-opacity: 1;
-      color: rgb(0 0 0 / var(--tw-text-opacity))
-    }
-
-    .hover\:text-black\/70:hover {
-      color: rgb(0 0 0 / 0.7)
-    }
-
-    .hover\:ring-black\/20:hover {
-      --tw-ring-color: rgb(0 0 0 / 0.2)
-    }
-
-    .focus\:outline-none:focus {
-      outline: 2px solid transparent;
-      outline-offset: 2px
-    }
-
-    .focus-visible\:ring-1:focus-visible {
-      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
-    }
-
-    .focus-visible\:ring-\[\#FF2D20\]:focus-visible {
-      --tw-ring-opacity: 1;
-      --tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity))
-    }
-
-    @media (min-width: 640px) {
-      .sm\:size-16 {
-        width: 4rem;
-        height: 4rem
-      }
-
-      .sm\:size-6 {
-        width: 1.5rem;
-        height: 1.5rem
-      }
-
-      .sm\:pt-5 {
-        padding-top: 1.25rem
-      }
-    }
-
-    @media (min-width: 768px) {
-      .md\:row-span-3 {
-        grid-row: span 3 / span 3
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .lg\:col-start-2 {
-        grid-column-start: 2
-      }
-
-      .lg\:h-16 {
-        height: 4rem
-      }
-
-      .lg\:max-w-7xl {
-        max-width: 80rem
-      }
-
-      .lg\:grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr))
-      }
-
-      .lg\:grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr))
-      }
-
-      .lg\:flex-col {
-        flex-direction: column
-      }
-
-      .lg\:items-end {
-        align-items: flex-end
-      }
-
-      .lg\:justify-center {
-        justify-content: center
-      }
-
-      .lg\:gap-8 {
-        gap: 2rem
-      }
-
-      .lg\:p-10 {
-        padding: 2.5rem
-      }
-
-      .lg\:pb-10 {
-        padding-bottom: 2.5rem
-      }
-
-      .lg\:pt-0 {
-        padding-top: 0px
-      }
-
-      .lg\:text-\[\#FF2D20\] {
-        --tw-text-opacity: 1;
-        color: rgb(255 45 32 / var(--tw-text-opacity))
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .dark\:block {
-        display: block
-      }
-
-      .dark\:hidden {
-        display: none
-      }
-
-      .dark\:bg-black {
-        --tw-bg-opacity: 1;
-        background-color: rgb(0 0 0 / var(--tw-bg-opacity))
-      }
-
-      .dark\:bg-zinc-900 {
-        --tw-bg-opacity: 1;
-        background-color: rgb(24 24 27 / var(--tw-bg-opacity))
-      }
-
-      .dark\:via-zinc-900 {
-        --tw-gradient-to: rgb(24 24 27 / 0) var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)
-      }
-
-      .dark\:to-zinc-900 {
-        --tw-gradient-to: #18181b var(--tw-gradient-to-position)
-      }
-
-      .dark\:text-white\/50 {
-        color: rgb(255 255 255 / 0.5)
-      }
-
-      .dark\:text-white {
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-text-opacity))
-      }
-
-      .dark\:text-white\/70 {
-        color: rgb(255 255 255 / 0.7)
-      }
-
-      .dark\:ring-zinc-800 {
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(39 39 42 / var(--tw-ring-opacity))
-      }
-
-      .dark\:hover\:text-white:hover {
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-text-opacity))
-      }
-
-      .dark\:hover\:text-white\/70:hover {
-        color: rgb(255 255 255 / 0.7)
-      }
-
-      .dark\:hover\:text-white\/80:hover {
-        color: rgb(255 255 255 / 0.8)
-      }
-
-      .dark\:hover\:ring-zinc-700:hover {
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(63 63 70 / var(--tw-ring-opacity))
-      }
-
-      .dark\:focus-visible\:ring-\[\#FF2D20\]:focus-visible {
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity))
-      }
-
-      .dark\:focus-visible\:ring-white:focus-visible {
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity))
-      }
-    }
   </style>
+  <!-- Styles -->
 </head>
 
-<body>
-  <div class="font-sans antialiased dark:text-white/50 dark:bg-gradient-to-r from-slate-950 to-gray-950">
+<body class="ubuntu-sans">
+  <section class="antialiased dark:text-white/50 dark:bg-gradient-to-r from-slate-950 to-gray-950">
     <!-- Header semitransparente -->
     <header
       class="header fixed top-0 left-0 right-0 z-50 py-4 px-6 flex justify-between items-center bg-gradient-to-b from-gray-950 to-transparent">
       <div class="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-          <a class="mr-5 hover:text-white">First Link</a>
-          <a class="mr-5 hover:text-white">Second Link</a>
-          <a class="mr-5 hover:text-white">Third Link</a>
-          <a class="hover:text-white">Fourth Link</a>
+          <a class="mr-5 hover:text-white" href="#topelis">Top Películas</a>
+          <a class="mr-5 hover:text-white" href="#est">Estadisticas</a>
+          <a class="mr-5 hover:text-white" href="#feed">FeedBack</a>
+          <a class="mr-5 hover:text-white" href="#nteam">Nuestro Equipo</a>
+          <!--a class="hover:text-white">Fourth Link</a-->
         </nav>
         <a
-          class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+          class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
             stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
             viewBox="0 0 24 24">
@@ -946,14 +76,14 @@
             </a>
             @else
             <a href="{{ route('login') }}"
-              class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-              Log in
+              class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white font-semibold">
+              Ingresar
             </a>
 
             @if (Route::has('register'))
             <a href="{{ route('register') }}"
-              class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-              Register
+              class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white font-semibold">
+              Registrarse
             </a>
             @endif
             @endauth
@@ -962,7 +92,9 @@
         </div>
       </div>
     </header>
+    <!-- Header semitransparente -->
 
+    <!-- parallaxCarousel -->
     <div id="parallaxCarousel" class="relative h-screen w-full overflow-hidden">
       <div class="parallax-slide absolute top-0 left-0 h-full w-full bg-cover bg-center"
         style="background-image: url('https://i.pinimg.com/originals/cf/95/9b/cf959b32cbef39dcebbb947efcfe7561.jpg');">
@@ -996,6 +128,10 @@
         style="background-image: url('https://images.boosty.to/image/ddc83ab8-5cae-4eb0-87e3-88510a43db68?change_time=1688969798');">
         <div class="overlay absolute inset-0"></div>
       </div>
+      <div class="parallax-slide absolute top-0 left-0 h-full w-full bg-cover bg-center opacity-0"
+        style="background-image: url('https://wallpapers.com/images/featured/invincible-u17h0jg0nw7lhrgc.jpg');">
+        <div class="overlay absolute inset-0"></div>
+      </div>
 
       <!-- Contenido -->
       <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
@@ -1005,13 +141,13 @@
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">¿Quieres ver disfrutar ya?</h1>
             <p class="mb-8 leading-relaxed">A partir de USD 3,99. Cancela cuando quieras.</p>
             <div class="flex w-full md:justify-center justify-center items-end">
-              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+              <div class="relative mr-4 md:w-full lg:w-full xl:w-full w-1/3">
                 <label for="hero-field" class="leading-7 text-sm text-gray-400">Correo</label>
                 <input type="text" id="hero-field" name="hero-field"
                   class="w-full bg-gray-800 rounded bg-opacity-40 border border-gray-700 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>
               <button
-                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Solicitar</button>
+                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg">Solicitar</button>
             </div>
             <p class="text-sm mt-2 text-gray-400 mb-8 w-full text-center">
               Ingresa tu email para crear una cuenta.
@@ -1049,30 +185,494 @@
         </div>
       </div>
     </div>
-  </div>
+    <!-- parallaxCarousel -->
+  </section>
 
-  <section class="text-gray-400 bg-gray-900 body-font relative">
-    <div class="absolute inset-0 bg-gray-900">
-      <iframe title="map" width="100%" height="100%" style="filter: grayscale(1) contrast(1.2) opacity(0.16);" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.4215077721155!2d-68.13253932486631!3d-16.504804584239597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2064df652367%3A0xddb4c11ab8c8d666!2sMonoblock%20UMSA!5e0!3m2!1ses!2sbo!4v1726606163662!5m2!1ses!2sbo"></iframe>
+  <!-- movies cards -->
+  <section class="text-gray-400 bg-gray-950 body-font" id="topelis">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
+          jianbing selfies heirloom.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt=""
+              src="https://m.media-amazon.com/images/S/pv-target-images/df6f37011ba65dcd0a2cff6501f36c7e264f19be23622b5a805124412e4b4a68.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Etan Cohen</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Dale Duro</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Un banquero inversionista que será encarcelado le pide al hombre que lava su carro que lo prepare
+                    para su vida detrás de las rejas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt="" src="https://m.media-amazon.com/images/I/81c0HBeMtFL._AC_UF894,1000_QL80_.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Keenen Ivory Wayans</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Chiquito pero peligroso</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Un pequeño fugitivo de la ley finge ser un niño para poder llegar hasta una gema robada que está
+                    oculta en la bolsa de una mujer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt=""
+              src="https://m.media-amazon.com/images/M/MV5BYzkyNzdlNmUtYjQwOC00ZjE4LWE1NTItYTQ4YTFkNzIwM2IxXkEyXkFqcGdeQXVyMTM1MDExOTE2._V1_.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Matt Reeves</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Cloverfield</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Una cámara de video graba los terribles eventos que se desarrollan cuando una criatura monstruosa
+                    ataca Nueva York, provocando muerte y destrucción.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt="" src="https://pics.filmaffinity.com/The_Cloverfield_Paradox-826341140-large.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Julius Onah</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Cloverfield Paradox</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Un equipo a bordo de una estación espacial se encuentra solo tras un experimento científico que
+                    provoca que la Tierra desaparezca.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt=""
+              src="https://m.media-amazon.com/images/S/pv-target-images/3307ca0df325da35692128a6703a4bff5a5cf8c60bb719f221cadd6c03834358.jpg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Anthony Russo, Joe Russo</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Avengers: Infinity War</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Los superhéroes se alían para vencer al poderoso Thanos. Si Thanos logra reunir las seis gemas nadie
+                    podrá detenerlo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <a href="#" class="group relative block bg-black">
+            <img alt=""
+              src="https://i.kym-cdn.com/photos/images/original/002/809/102/bbc.jpeg"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-30" />
+
+            <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Takashi Yamazaki</p>
+
+              <p class="text-xl font-bold text-white sm:text-2xl">Godzilla Minus One</p>
+
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                <div
+                  class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                  <p class="text-sm text-white">
+                    Un monstruo gigante emerge de las profundidades del océano y se dispone a atacar Japón justo cuando la nación trata de recuperarse tras la Segunda Guerra Mundial.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- movies cards -->
+
+  <!-- Estadisticas -->
+  <section class="text-gray-400 bg-gray-950 body-font" id="est">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep
+          jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M8 17l4 4 4-4m-4-5v9"></path>
+              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">2.7K</h2>
+            <p class="leading-relaxed">Downloads</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">1.3K</h2>
+            <p class="leading-relaxed">Users</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+              <path
+                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+              </path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">74</h2>
+            <p class="leading-relaxed">Files</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-blue-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">46</h2>
+            <p class="leading-relaxed">Places</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Estadisticas -->
+
+  <!-- Feedback -->
+  <section class="text-gray-400 bg-gray-950 body-font relative" id="feed">
+    <div class="absolute inset-0 bg-gray-950">
+      <iframe title="map" width="100%" height="100%" style="filter: grayscale(1) contrast(1.2) opacity(0.16);"
+        frameborder="0" marginheight="0" marginwidth="0" scrolling="no"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.4215077721155!2d-68.13253932486631!3d-16.504804584239597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2064df652367%3A0xddb4c11ab8c8d666!2sMonoblock%20UMSA!5e0!3m2!1ses!2sbo!4v1726606163662!5m2!1ses!2sbo"></iframe>
     </div>
     <div class="container px-5 py-24 mx-auto flex">
-      <div class="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+      <div
+        class="lg:w-1/3 md:w-1/2 bg-gray-950 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
         <h2 class="text-white text-lg mb-1 font-medium title-font">Feedback</h2>
         <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-          <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input type="email" id="email" name="email"
+            class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
-          <textarea id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          <textarea id="message" name="message"
+            class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
-        <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <p class="text-xs text-gray-400 text-opacity-90 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        <button
+          class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <p class="text-xs text-gray-400 text-opacity-90 mt-3">Chicharrones blog helvetica normcore iceland tousled brook
+          viral artisan.</p>
       </div>
     </div>
   </section>
+  <!-- Feedback -->
 
+  <!-- NuestroTeam -->
+  <section class="text-gray-400 bg-gray-950 body-font" id="nteam">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="text-2xl font-medium title-font mb-4 text-white uppercase">Nuestro Equipo</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+          asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/3 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-full w-3/4 object-cover object-center mb-4"
+              src="https://dummyimage.com/200x200">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">Alper Kamu</h2>
+              <h3 class="text-gray-500 mb-3">UI Developer</h3>
+              <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              <span class="inline-flex">
+                <a class="text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-full w-3/4 object-cover object-center mb-4"
+              src="https://dummyimage.com/201x201">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">Holden Caulfield</h2>
+              <h3 class="text-gray-500 mb-3">UI Developer</h3>
+              <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              <span class="inline-flex">
+                <a class="text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3 md:w-1/2">
+          <div class="h-full flex flex-col items-center text-center">
+            <img alt="team" class="flex-shrink-0 rounded-full w-3/4 object-cover object-center mb-4"
+              src="https://dummyimage.com/202x202">
+            <div class="w-full">
+              <h2 class="title-font font-medium text-lg text-white">Atticus Finch</h2>
+              <h3 class="text-gray-500 mb-3">UI Developer</h3>
+              <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+              <span class="inline-flex">
+                <a class="text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-2 text-gray-700">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- NuestroTeam -->
+
+  <!-- Footer -->
+  <footer class="text-gray-400 bg-gray-950 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-400 hover:text-white">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-400 hover:text-white">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+          <div
+            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <label for="footer-field" class="leading-7 text-sm text-gray-400">Placeholder</label>
+              <input type="text" id="footer-field" name="footer-field"
+                class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-blue-900 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button
+              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Button</button>
+          </div>
+          <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+            <br class="lg:block hidden">waistcoat green juice
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+            viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Tailblocks</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-6 sm:mt-0 mt-4">© 2020 Tailblocks —
+          <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+            rel="noopener noreferrer">@knyttneve</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- script parallax_corousel -->
   <script>
     const carousel = document.getElementById('parallaxCarousel');
     const slides = carousel.querySelectorAll('.parallax-slide');
@@ -1105,6 +705,7 @@
 
     setInterval(nextSlide, 4000);
   </script>
+  <!-- script -->
 </body>
 
 </html>
