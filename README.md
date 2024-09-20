@@ -19,7 +19,7 @@ git clone https://github.com/BugaPunk/video_club.git
 ### Paso 2:
 Ingresar a la carpeta clonada
 ```bash
-cd club_video_app
+cd video_club
 ```
 
 ### Paso 3:
