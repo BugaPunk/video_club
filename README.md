@@ -7,9 +7,53 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Video Club AppLiewire
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Pasos:
+Previamente debe tener instalado XAMPP, LAMPP o WAMPP y debe estar iniciado el servidor
+### Paso 1:
+```bash
+git clone https://github.com/BugaPunk/club_video_app.git
+```
+
+### Paso 2:
+Ingresar a la carpeta clonada
+```bash
+cd club_video_app
+```
+
+### Paso 3:
+Instala dependencias
+```bash
+composer install
+npm i
+npm run build
+```
+
+
+### Paso 4:
+Crear archivo `.env`
+```bash
+cp .env.example .env
+```
+
+### Paso 5:
+Generar clave de app
+```bash
+php artisan key:generate
+```
+
+### Paso 6:
+Crear y realizar migraciones a la base de datos (si es por primera vez dar en SI crear base de datos)
+```bash
+php artisan migrate
+```
+
+### Paso 7:
+Ejecutar servidor
+```bash
+php artisan serve
+```
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
