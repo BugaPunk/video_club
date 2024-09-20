@@ -13,7 +13,7 @@
 Previamente debe tener instalado XAMPP, LAMPP o WAMPP y debe estar iniciado el servidor
 ### Paso 1:
 ```bash
-git clone https://github.com/BugaPunk/club_video_app.git
+git clone https://github.com/BugaPunk/video_club.git
 ```
 
 ### Paso 2:
