@@ -14,7 +14,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::get();
-        return view('admin.category.index', compact('categories'));
+        return view('admin.categories.index', compact('categories'));
     }
     
     public function create()
@@ -35,16 +35,18 @@ class CategoryController extends Controller
     
     public function edit(Category $category)
     {
-        //
+        return view('admin.category.show', compact('category'));
     }
 
     public function update(UpdateRequest $request, Category $category)
     {
-        //
+        $category->update($request->all());
+        return redirect()->route('categories.index');
     }
     
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return redirect()->route('categories.index');
     }
 }

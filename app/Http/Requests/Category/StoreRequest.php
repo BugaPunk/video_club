@@ -11,7 +11,7 @@ class StoreRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,20 @@ class StoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'nombre' => 'required|string|max:100',
+            'descripcion' => 'nullable|string|max:250',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'nombre.required'=>'Este campo es requerido.',
+            'nombre.string'=>'El valor no es correcto.',
+            'nombre.max'=>'Solo se permite 50 caracteres.',
+            'descripcion.required'=>'Este campo es requerido.',
+            'descripcion.string'=>'El valor no es correcto.',
+            'descripcion.max'=>'Solo se permite 250 caracteres.',
         ];
     }
 }
